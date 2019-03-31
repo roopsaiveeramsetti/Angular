@@ -1,0 +1,121 @@
+                                                         INTERVIEW PANEL QUETIONS:-ANGULAR8
+
+
+
+1) Explain RXJS Package ?
+
+                 a. Reactive Extensions for JavaScript (RxJS) is a reactive streams library that allows you to work with asynchronous data streams. 
+                 b. RxJS can be used both in the browser or in the server-side using Node.js.
+                 c. Asynchronous, in JavaScript means we can call a function and register a callback to be notified when results are available, 
+                    so we can continue with execution and avoid the Web Page from being unresponsive.
+                 d. This is used for ajax calls, DOM-events, Promises, WebWorkers and WebSockets.
+                 e. In RxJS, you represent asynchronous data streams using observable sequences.
+                 f. When using the push pattern, we subscribe to the source stream and react to new data as soon as is made available (emitted).
+                 g. When using the pull pattern, we are using the same operations but synchronously. This happens when using Arrays, Generators or Iterables.
+                 h. RxJS combines Observables and Operators so we can subscribe to streams and react to changes using composable operations.
+                 i. RxJS plays well with Angular but instead of writing your own helper functions to bridge the two you can use rx.angular.js,
+                    a dedicated library for RxJS and AngularJS interoperability.
+                 j . In RxJS package we have many function's Subscribe(),Map(),Catch() etc.
+
+
+
+2) Explain Observable ?
+
+                 a.  Observables are just that - things you wish to observe and take action on. 
+                 b.  Angular 2 uses the Observer pattern which simply means - Observable objects are registered,
+                     and other objects observe  them and take action when the observable object is acted on in some way.
+                 c.  Observables are not a Angular 2 concept , It from Reactive extensions managed by Microsoft, used for asynchronous programming.
+                 e.  This is similar to promises, but with some differences.
+                 f.  Promises execute once and then are done where Observables continue to be observed after the event occurs. 
+                 g.  Observables in Angular2 require the Rx.js library.
+                 h.  The Observables are impotant, because they allow you to escape the so called “Callback-Hell”.
+                 i.  An observable acts as a container for an item or collection of items.
+                 j.  These items in the container are not stored in memory, rather the items are added in asynchronous fashion (like events).
+                 k.  Now, whenever the observer subscribes, he or she can be able to access the items in the observable.
+                     later the observer can be able to manipulate the received items.
+
+
+3) Why to subscribe result in component ?
+            
+                 a. subscribe() function is present in RxJS package.
+                 b. subscribe() is function on the observable type.
+                 c. For getting Observable result in our compnents we call subscribe method.
+                 d. With  the help of subscribe function only we can access Oservable data.
+                 e. when we call subscribe() function then internally subscriber function is executed on observable instance. 
+                 f. In subscribing we use three distinctive callbacks.
+                 g. First one is invoked when receiving new values.
+                 h. Second for any errors that arise.
+                 i. Third represents the function to be invoked when the sequence of incoming data is complete and successful.
+
+4) Explain Map() Function ?
+
+                a. Map() function is present in RxJS package.
+                b. Map in Rxjs used for projection, means you can transform the array in to entirely new array.
+                c. If we getting Object Array as Response then for manipulation perpose we are using map function.
+                d. Map works exactly the same for Observables as it does for arrays.
+                e. We use map to transform a collection of items into a collection of different items.
+                f. It helps if an Observable as a collection of items.
+                g. For Observable Map act as iterator.
+                h. When you map on an array, you already have all the elements in the array and it iterates log(n) times through each of the elements. 
+                i. When you map on an Observable, has the observable already received all of the elements or
+                   do the functions operate on each element (event) as it arrives. 
+
+
+5) Explain Catch() Function ?
+
+                a. In the Reactive Extensions, any error is propogated through the onError channel which halts the sequence.
+                b. We can compensate for this by using the catch operator, at both the class and instance level.
+                c. try/catch/finally approach won't work with asynchronous code.
+                d. including the ReactJS catch library and then using the catch function.   
+                e. class level catch method, we can catch errors as they happen with the current sequence and then move to the next sequence should there be an error.
+                f. we have  an instance version of catch which can be used two ways.
+                g. First way where we can take an existing stream, catch the error and move onto the next stream or Promise.
+                h. Second way overload of catch allows us to inspect the error as it comes in so we can decide which route to take.
+
+
+6) Explain throw() function ?
+
+                a. throw() function are present in RxJS package.
+                b. throw() is used for custom error handling.
+                c. All callbacks in RxJS are wrapped with try-catch blocks so it'll be caught and then sent as an error notification.
+                d. with Using Observale we can throw error(either server side or internal problem).
+                e. in future we have several alternate to throwing errors.
+                f. First approach: using the sequence factory function.
+                g. Second approach: mapping timer onto an error stream.
+                h. Approach three: Explicitly throwing an error during mapping.
+                i. Approach four: Implementing a custom stream creation method.
+                j. Approach five: concatenating two streams.
+
+7) How to make RxJS package make with Latest version of Angular ?
+                     
+                a. yarn add rxjs-compat@latest --save
+                b. import rxjs package.
+                c. import map,operator.
+                d. npm install rxjs-compat
+                e. import { observeOn } from 'rxjs/operators
+
+8) Difference Between Observable and Promisses ?
+
+                a. Promises are most commonly used to handle HTTP requests where Observable used for all Kind of Request.
+                b. Promises uses for a single response where as Observable uses for Multiple respinses.
+                c. in Promises we use resolve function where in Observable we use observer.next.
+                d. In promiss we use then where as in Observable we use subscribe.
+                e. Promises are eager and Observable are lazy.
+                f. you cannot chain several subscribe calls like you would chain then calls in Promises. 
+                g. Promises are always “multicast”, while Observable is “unicast” by default, but can be easily turned into a “multicast” Observable, if needed.
+                h. Promises do support emitting multiple values.
+                i. Function passed to Observable constructor gets called only when someone actually subscribes to an Observable
+                j. Promise is always resolved with the first value passed to the resolve function and ignores further calls to it.
+
+
+                
+
+
+                
+              
+ 
+
+
+
+
+         

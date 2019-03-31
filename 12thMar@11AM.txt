@@ -1,0 +1,295 @@
+			**** Directory Structure ****
+
+1) e2e
+	- e2e stands for end to end.
+
+	- e2e directory used to write the end to end test cases
+	  to angular applications
+
+
+2) node_modules
+
+	- "node_modules" directory representing the libraries.
+
+	- these libraries helps to execute the angular                      applications.
+
+
+3) src/app
+
+	- this directory used to deploy the angular applications
+
+	Ex.
+		Directives
+
+		Services
+
+		Single Page Applications
+
+		Pipes
+
+		---
+		---
+		---
+
+4) src/app/app.module.ts
+
+	- "app.module.ts" file called as configuration file.
+
+	- "app.module.ts" file used to register the angular
+	   applications.
+
+	- angular framework will execute applications based on
+	  configuration file.
+
+
+5) src/assets
+	
+	- this directory used to deploy the static resources.
+
+		Ex.
+			Logos
+
+			XML Files
+
+			JSON Files
+
+			Fonts
+
+			---
+			---
+			---
+
+
+6) src/environments
+
+	- this directory used to configure the required 
+	  environment.
+
+	- in general we have two types of environments.
+
+		1) Development Environment
+
+		2) Production Environment
+
+
+7) src/browserslist
+
+	- it will show the list of browsers supported by angular
+ 
+
+8) src/favicon.ico
+
+	- this logo representing default logo of angular.
+
+
+9) src/index.html
+
+	- this template called as main template.
+
+	- this template also called as landing template.
+
+	- angular starts the execution from "index.html" file.
+
+
+
+10) src/karma.conf.js
+	
+	- in general we have 3 types of test cases.
+
+		1) unit test cases
+
+		2) integration test cases
+
+		3) end to end test cases
+
+	- we will write unit test cases by using "karma" tool.
+
+	- "karma.conf.js" file representing configurations of
+	  "karma" tool.
+
+
+11) src/main.ts
+
+	- "main.ts" file called as main file in angular                      application.
+
+	- "index.html" file internally invokes the "main.ts"                 file.
+
+	- "main.ts" file internally invokes the "app.module.ts"              file.
+
+	- "app.module.ts" file containes our applications                    registrations.
+
+	- based on registration file angular framework will                  execute our applications.
+
+
+12) src/polyfills.ts
+
+	- "polyfills.ts" file acting as library.
+
+	- "polyfills.ts" file converting TypeScript to Equalent
+	   JavaScript.
+
+
+13) src/styles.css
+
+	- "styles.css" file called as global styles.
+
+	-  these styles applicable to entire angular application.
+
+
+14) src/test.ts
+
+	- this file is the sample testing file.
+
+
+15) src/tsconfig.app.json
+
+	- this file called as configuration file for entire
+	  angular application.
+
+	- what ever the instructions we placed here, automatically
+	  applicable to entire angular application.
+
+
+16) src/tsconfig.spec.json
+
+	- this file called as configuration file for entire test
+	  cases present in angular application.
+
+	- what ever the instructions we placed here, automatically
+	  applicable to entire test cases in application.
+
+
+17) src/tslint.json
+
+	- this file called as validator file for TypeScript.
+
+
+18) firstApp/angular.json
+
+	- this file representing directory structure of
+	  angular application.
+
+
+19) firstApp/package.json
+
+	- this file used to download the 3rd party libraries
+	  those are required to build angular applications.
+
+
+
+		***** Component in Angular *****
+
+	- Simple TypeScript Class behaves like Component.
+
+	- As a Angular Developer, we can create multiple                     components.
+
+	- As a Angular Developer, we can provide communication               Between Components.
+
+	- Component Acting as Interface Between View and Service.
+
+	- Injecting Service to Component Called as Dependency
+	  Injection.
+
+	- we can establish the communication between view and
+	  component by using two way data binding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
